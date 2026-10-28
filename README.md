@@ -1,5 +1,9 @@
 # ROYO — Repair On Your Own
 
+> **"Understand Your Vehicle. Maintain with Confidence. Repair Smarter."**  
+> 🌐 **Live Web App:** [https://royo-app.web.app](https://royo-app.web.app)  
+> 🔗 **Domain:** [https://royo.tecdroid.com](https://royo.tecdroid.com)
+
 Motorcycle assistance, a personal garage, conversations, and a service logbook. React/Vite web, React Native/Expo mobile, and a layered Go API share one pnpm/Turborepo workspace.
 
 **The full production specification is not complete.** Read [the product audit](docs/PRODUCT-AUDIT.md) for tested behavior, repaired defects, missing requirements, and verification limits. [The design notes](docs/DESIGN.md) explain shared styling, desktop/phone layouts and branding.
@@ -66,6 +70,17 @@ pnpm --filter @royo/mobile exec expo export --platform ios --output-dir dist-exp
 ```
 
 CI includes the workspace checks, web build, browser tests and native bundle exports. No deployment or app-store publication is implied by a successful build.
+
+## Hosting & Deployment
+
+The web client is deployed and hosted on **Firebase Hosting**:
+- **Live URL:** [https://royo-app.web.app](https://royo-app.web.app)
+- **Firebase Console:** [https://console.firebase.google.com/project/royo-app/overview](https://console.firebase.google.com/project/royo-app/overview)
+
+To build and deploy new changes to Firebase Hosting:
+```sh
+pnpm deploy:web
+```
 
 ## Shared styles and assets
 
