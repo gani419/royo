@@ -7,6 +7,7 @@
     "web": "pnpm --filter @royo/web dev",
     "mobile": "pnpm --filter @royo/mobile start",
     "backend": "cd backend && go run ./cmd/server",
+    "deploy:web": "turbo run build --filter=@royo/web && npx firebase-tools deploy --only hosting",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
