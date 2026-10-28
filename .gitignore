@@ -27,6 +27,9 @@ backend/royo-server
 *.mobileprovision
 *.orig.*
 
+# Firebase CLI cache
+.firebase/
+
 # Environment variables
 .env
 .env.local
