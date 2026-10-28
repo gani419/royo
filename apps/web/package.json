@@ -1,0 +1,36 @@
+{
+  "name": "@royo/web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "@royo/api": "workspace:*",
+    "@royo/components": "workspace:*",
+    "@royo/features": "workspace:*",
+    "@royo/hooks": "workspace:*",
+    "@royo/platform": "workspace:*",
+    "@royo/schemas": "workspace:*",
+    "@royo/store": "workspace:*",
+    "@royo/theme": "workspace:*",
+    "@royo/types": "workspace:*",
+    "@royo/utils": "workspace:*",
+    "lucide-react": "^1.62.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}

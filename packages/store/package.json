@@ -1,0 +1,28 @@
+{
+  "name": "@royo/store",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "@royo/api": "workspace:*",
+    "@royo/platform": "workspace:*",
+    "@royo/types": "workspace:*",
+    "react-redux": "^9.2.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "typescript": "^5.7.3"
+  }
+}
+

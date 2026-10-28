@@ -1,0 +1,97 @@
+.dialog {
+  width: min(480px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 24px 90px #160e3033;
+}
+.dialog::backdrop {
+  background: #17102399;
+  backdrop-filter: blur(4px);
+}
+.dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+.dialog-header .eyebrow {
+  font-size: 8px;
+  margin-bottom: 10px;
+}
+.dialog-header h2 {
+  font-size: 23px;
+}
+.dialog-header .icon-button {
+  margin: -10px -10px 0 0;
+}
+.form-intro {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 14px 0 24px;
+}
+.form-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.form-stack label {
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.form-stack input,
+.form-stack textarea,
+.form-stack select,
+.vehicle-select {
+  color: var(--ink);
+  background: var(--elevated);
+  border: 1px solid var(--border);
+  padding: 12px;
+  width: 100%;
+  min-width: 0;
+  min-height: 46px;
+  font-size: 12px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.form-footer {
+  padding-top: 18px;
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+}
+.form-footer button {
+  color: var(--brand);
+  padding: 6px;
+}
+.field-error {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--danger);
+}
+.field-error:empty {
+  display: none;
+}
+.field-help {
+  color: var(--muted);
+  font-size: 10px;
+  margin-top: -12px;
+}
+@media (max-width: 599px) {
+  .dialog {
+    padding: 24px 20px;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "ROYO",
+    "slug": "royo",
+    "version": "1.0.0",
+    "orientation": "default",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#f6f5f8"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tecdroid.royo"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#f6f5f8"
+      },
+      "package": "com.tecdroid.royo"
+    }
+  }
+}
+

@@ -1,0 +1,29 @@
+{
+  "name": "royo-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repair On Your Own (ROYO) - Enterprise Cross-Platform AI Vehicle Assistant",
+  "scripts": {
+    "web": "pnpm --filter @royo/web dev",
+    "mobile": "pnpm --filter @royo/mobile start",
+    "backend": "cd backend && go run ./cmd/server",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "playwright test",
+    "test:e2e": "playwright test",
+    "theme:generate": "node scripts/generate-theme.mjs",
+    "theme:check": "node scripts/generate-theme.mjs --check",
+    "format": "prettier --write apps/web/src apps/mobile/src apps/mobile/App.tsx tests playwright.config.ts",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "prettier": "^3.9.10",
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@12.15.0"
+}
