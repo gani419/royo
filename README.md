@@ -1,8 +1,7 @@
 # ROYO — Repair On Your Own
 
 > **"Understand Your Vehicle. Maintain with Confidence. Repair Smarter."**  
-> 🌐 **Live Web App:** [https://royo-app.web.app](https://royo-app.web.app)  
-> 🔗 **Domain:** [https://royo.tecdroid.com](https://royo.tecdroid.com)
+> 🌐 **Live Web App:** [https://royo-app.web.app](https://royo-app.web.app)
 
 Motorcycle assistance, a personal garage, conversations, and a service logbook. React/Vite web, React Native/Expo mobile, and a layered Go API share one pnpm/Turborepo workspace.
 
