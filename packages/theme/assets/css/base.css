@@ -26,6 +26,8 @@
   --success: #8ad3ad;
   --danger: #ffa3b3;
   --warning: #e8c18a;
+  --sidebar: #1e192a;
+  --sidebar-text: #f0edf6;
 }
 body {
   margin: 0;
